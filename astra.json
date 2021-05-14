@@ -1,0 +1,10 @@
+{
+  "name": "Glitch Astra Starter",
+  "description": "Jumpstart your next React/Express prototype with this starter!",
+  "duration": "10 minutes",
+  "skillLevel": "Beginner",
+  "githubUrl": "https://github.com/DataStax-Examples/glitch-astra-starter",
+  "tags": [{ "name": "javascript" }, { "name": "REST API" }],
+  "category": "starters",
+  "priority": 1
+}
