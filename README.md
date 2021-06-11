@@ -1,5 +1,5 @@
 <!--- STARTEXCLUDE --->
-# Glitch Astra Starter
+# Glitch and Astra DB Starter
 *10 minutes, Beginner, [Start Building](https://github.com/DataStax-Examples/glitch-astra-starter#prerequisites)*
 
 Jumpstart your next NodeJS prototype with this starter!
@@ -8,7 +8,7 @@ Jumpstart your next NodeJS prototype with this starter!
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-sample-app-default.png)
 
 ## Objectives
-* Provide a fullstack development example using Astra as the storage backend
+* Provide a fullstack development example using Astra DB as the storage backend
   
 ## How this works
 Run this sample in Glitch or on your local machine and then use it to jump start your next App.
@@ -19,7 +19,7 @@ Run this sample in Glitch or on your local machine and then use it to jump start
 To build and play with this app, follow the build instructions that are located here: [https://github.com/DataStax-Examples/glitch-astra-starter#prerequisites](https://github.com/DataStax-Examples/glitch-astra-starter#prerequisites)
 
 <!--- STARTEXCLUDE --->
-# Running the Glitch Astra Starter
+# Running the Glitch and Astra DB Starter
 Follow the instructions below to get started.
 
 ## Prerequisites
@@ -71,7 +71,7 @@ information (we'll need this later!):
 
 ### Running on your local machine
 1. `cd` into the cloned repository. Install Node dependencies with `npm install`.
-2. Add your Astra database connection information into a `.env` file in the root of the project (copy the keys from the .env-example file).
+2. Add your Astra DB connection information into a `.env` file in the root of the project (copy the keys from the .env-example file).
 3. Start your app by running: `npm start`
 
 ### Running on Glitch
@@ -80,7 +80,7 @@ information (we'll need this later!):
 
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/glitch-new-project.png)
 
-3. Add your Astra database connection information into the `.env` section provided by Glitch. 
+3. Add your Astra DB connection information into the `.env` section provided by Glitch. 
 
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/glitch-env-vars.png)
 
