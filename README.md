@@ -26,7 +26,7 @@ Follow the instructions below to get started.
 Let's do some initial setup by creating a serverless(!) database.
 
 ### DataStax Astra
-1. Create a [DataStax Astra account](https://dtsx.io/3t6W43H) if you don't 
+1. Create a [DataStax Astra account](https://dtsx.io/2WTxCaa) if you don't 
 already have one:
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-register-basic-auth.png)
 
