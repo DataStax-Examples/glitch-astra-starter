@@ -5,7 +5,7 @@
 Jumpstart your next NodeJS prototype with this starter!
 <!--- ENDEXCLUDE --->
 
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-sample-app-default.png)
+![image](https://raw.githubusercontent.com/DataStax-Examples/glitch-astra-starter/master/hero.png)
 
 ## Objectives
 * Provide a fullstack development example using Astra DB as the storage backend
