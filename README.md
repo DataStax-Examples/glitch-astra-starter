@@ -12,7 +12,7 @@ Jumpstart your next NodeJS prototype with this starter!
 * [Signup for DataStax Astra](https://dtsx.io/2YmhZJ6), or login to your already existing account. 
 * [Create an Astra DB Database](https://github.com/DataStax-Examples/sample-app-template/blob/master/GETTING_STARTED.md#create-an-astra-db) if you don't already have one.
 <!--- ENDEXCLUDE --->
-* [Create an Astra DB Keyspace](https://github.com/DataStax-Examples/sample-app-template/blob/master/GETTING_STARTED.md#create-an-astra-db-keyspace) called `sag_nuxtjs_fullstack` in your database.
+* [Create an Astra DB Keyspace](https://github.com/DataStax-Examples/sample-app-template/blob/master/GETTING_STARTED.md#create-an-astra-db-keyspace) called `sag_glitch_starter` in your database.
 * [Generate an Application Token](https://github.com/DataStax-Examples/sample-app-template/blob/master/GETTING_STARTED.md#create-an-application-token) with the role of `Database Administrator` for the Organization that your Astra DB is in.
 * Login to or create a [Glitch](https://glitch.com) account.
 * Start a new project using the sample app github repository (https://github.com/DataStax-Examples/glitch-astra-starter).
