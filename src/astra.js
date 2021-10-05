@@ -1,11 +1,11 @@
-const { createClient } = require("@astrajs/collections");
+const { createAstraClient } = require("@astrajs/client");
 
 let astraClient = null;
 let collectionName = "colors";
 
 const getAstraClient = async () => {
   if (astraClient === null) {
-    astraClient = await createClient(
+    astraClient = await createAstraClient(
       {
         astraDatabaseId: process.env.ASTRA_DB_ID,
         astraDatabaseRegion: process.env.ASTRA_DB_REGION,
@@ -18,15 +18,15 @@ const getAstraClient = async () => {
 };
 
 const getColorsCollection = async () => {
-  const documentClient = await getAstraClient();
-  return documentClient
+  const client = await getAstraClient();
+  return client.collections
     .namespace(process.env.ASTRA_DB_KEYSPACE)
     .collection(collectionName);
 };
 
 const getNamespace = async () => {
-  const documentClient = await getAstraClient();
-  return documentClient.namespace(process.env.ASTRA_DB_KEYSPACE);
+  const client = await getAstraClient();
+  return client.collections.namespace(process.env.ASTRA_DB_KEYSPACE);
 };
 
 module.exports = {

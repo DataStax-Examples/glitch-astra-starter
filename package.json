@@ -7,7 +7,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@astrajs/collections": "0.2.1",
+    "@astrajs/client": "^0.2.1",
     "dotenv": "^10.0.0",
     "fastify": "^3.22.0",
     "fastify-formbody": "^5.1.0",
