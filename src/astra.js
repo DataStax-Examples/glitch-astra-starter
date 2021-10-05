@@ -1,6 +1,7 @@
 const { createClient } = require("@astrajs/collections");
 
 let astraClient = null;
+let collectionName = "colors";
 
 const getAstraClient = async () => {
   if (astraClient === null) {
@@ -20,10 +21,13 @@ const getColorsCollection = async () => {
   const documentClient = await getAstraClient();
   return documentClient
     .namespace(process.env.ASTRA_DB_KEYSPACE)
-    .collection("colors");
+    .collection(collectionName);
 };
 
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const getNamespace = async () => {
+  const documentClient = await getAstraClient();
+  return documentClient.namespace(process.env.ASTRA_DB_KEYSPACE);
+};
 
 module.exports = {
   addColorHistory: async (color) => {
@@ -51,10 +55,7 @@ module.exports = {
   },
 
   deleteColorHistory: async () => {
-    await getAstraClient();
-    astraClient.restClient.delete(
-      `/api/rest/v2/schemas/keyspaces/${process.env.ASTRA_DB_KEYSPACE}/tables/colors`
-    );
-    await sleep(2000);
+    const namespace = await getNamespace();
+    return await namespace.deleteCollection(collectionName);
   },
 };
